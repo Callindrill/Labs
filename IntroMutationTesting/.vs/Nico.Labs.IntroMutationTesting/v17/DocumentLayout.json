@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{216C9029-CE0D-487A-AE4B-F2FF9FA49501}|Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj|c:\\users\\jbruc\\source\\repos\\nico.labs.intromutationtesting\\nico.labs.intromutationtesting.tests\\invoicecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{216C9029-CE0D-487A-AE4B-F2FF9FA49501}|Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj|solutionrelative:nico.labs.intromutationtesting.tests\\invoicecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E6808E-D88D-45B9-B85C-FFEC38C638BC}|Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.csproj|c:\\users\\jbruc\\source\\repos\\nico.labs.intromutationtesting\\nico.labs.intromutationtesting\\invoicecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E6808E-D88D-45B9-B85C-FFEC38C638BC}|Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.csproj|solutionrelative:nico.labs.intromutationtesting\\invoicecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{216C9029-CE0D-487A-AE4B-F2FF9FA49501}|Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj|c:\\users\\jbruc\\source\\repos\\nico.labs.intromutationtesting\\nico.labs.intromutationtesting.tests\\nico.labs.intromutationtesting.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{216C9029-CE0D-487A-AE4B-F2FF9FA49501}|Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj|solutionrelative:nico.labs.intromutationtesting.tests\\nico.labs.intromutationtesting.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceCalculatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.Tests\\InvoiceCalculatorTests.cs",
+              "RelativeDocumentMoniker": "Nico.Labs.IntroMutationTesting.Tests\\InvoiceCalculatorTests.cs",
+              "ToolTip": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.Tests\\InvoiceCalculatorTests.cs",
+              "RelativeToolTip": "Nico.Labs.IntroMutationTesting.Tests\\InvoiceCalculatorTests.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAADwv6cAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:22:36.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting\\InvoiceCalculator.cs",
+              "RelativeDocumentMoniker": "Nico.Labs.IntroMutationTesting\\InvoiceCalculator.cs",
+              "ToolTip": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting\\InvoiceCalculator.cs",
+              "RelativeToolTip": "Nico.Labs.IntroMutationTesting\\InvoiceCalculator.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T04:20:10.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Nico.Labs.IntroMutationTesting.Tests",
+              "DocumentMoniker": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj",
+              "RelativeDocumentMoniker": "Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj",
+              "ToolTip": "C:\\Users\\jbruc\\Source\\Repos\\Nico.Labs.IntroMutationTesting\\Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj",
+              "RelativeToolTip": "Nico.Labs.IntroMutationTesting.Tests\\Nico.Labs.IntroMutationTesting.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-03T04:17:07.816Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
