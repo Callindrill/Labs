@@ -398,35 +398,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/IntroMutationTesting/IntroMutationTesting.sln.DotSettings.user
-/IntroMutationTesting/.vs/IntroMutationTesting/CopilotIndices/17.13.441.19478/CodeChunks.db
-/IntroMutationTesting/.vs/IntroMutationTesting/CopilotIndices/17.13.441.19478/SemanticSymbols.db
-/IntroMutationTesting/.vs/IntroMutationTesting/FileContentIndex/d7ed5ba0-9ade-4a48-8994-2a1bb37d9b6a.vsidx
-/IntroMutationTesting/.vs/IntroMutationTesting/DesignTimeBuild/.dtbcache.v2
-/IntroMutationTesting/.vs/IntroMutationTesting/v17/.futdcache.v2
-/IntroMutationTesting/.vs/IntroMutationTesting/v17/.suo
-/IntroMutationTesting/.vs/IntroMutationTesting/v17/DocumentLayout.backup.json
-/IntroMutationTesting/.vs/IntroMutationTesting/v17/DocumentLayout.json
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/CopilotIndices/17.13.441.19478/CodeChunks.db
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/CopilotIndices/17.13.441.19478/SemanticSymbols.db
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/DesignTimeBuild/.dtbcache.v2
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/FileContentIndex/030d7f38-96a3-4ca5-b8a1-bdaafb1afd50.vsidx
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/FileContentIndex/0351417e-ed8e-45d2-bfd3-d67c5746e79a.vsidx
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/FileContentIndex/574ed918-e9a1-4fee-9487-f75fb5c75200.vsidx
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/FileContentIndex/6198ceba-2f78-49e8-b98c-6a1b10356761.vsidx
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/FileContentIndex/6a14f8b4-195f-4695-9415-b676761c4d13.vsidx
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/.futdcache.v2
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/.suo
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/DocumentLayout.backup.json
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/DocumentLayout.json
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/TestStore/0/012.testlog
-/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/TestStore/0/testlog.manifest
-/IntroMutationTesting/.vs/ProjectEvaluation/intromutationtesting.metadata.v9.bin
-/IntroMutationTesting/.vs/ProjectEvaluation/intromutationtesting.projects.v9.bin
-/IntroMutationTesting/.vs/ProjectEvaluation/intromutationtesting.strings.v9.bin
-/IntroMutationTesting/.vs/ProjectEvaluation/nico.labs.intromutationtesting.metadata.v9.bin
-/IntroMutationTesting/.vs/ProjectEvaluation/nico.labs.intromutationtesting.projects.v9.bin
-/IntroMutationTesting/.vs/ProjectEvaluation/nico.labs.intromutationtesting.strings.v9.bin
-/IntroMutationTesting/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/DesignTimeBuild/.dtbcache.v2
-/IntroMutationTesting/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/.futdcache.v2
-/IntroMutationTesting/IntroMutationTesting/.vs/Nico.Labs.IntroMutationTesting/v17/.suo

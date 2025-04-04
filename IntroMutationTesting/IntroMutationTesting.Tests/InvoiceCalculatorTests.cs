@@ -12,7 +12,7 @@ public class InvoiceTests
         if (discountApplied)
             Assert.Contains(code, invoice.DiscountCodes);
         else
-            Assert.DoesNotContain(code, invoice.DiscountCodes);    
+            Assert.DoesNotContain(code, invoice.DiscountCodes);
         Assert.Equal(discountApplied, applied);
         Assert.Equal(expected, invoice.CalculateTotal());
     }
@@ -64,6 +64,7 @@ public class InvoiceTests
         Assert.True(invoice.TryApplyDiscountCode(code2));
         Assert.NotNull(invoice.DiscountCodes);
         Assert.Single(invoice.DiscountCodes);
+        Assert.DoesNotContain(code1, invoice.DiscountCodes);
         Assert.Contains(code2, invoice.DiscountCodes);
     }
 
@@ -74,8 +75,8 @@ public class InvoiceTests
     }
 
     [Theory]
-    [InlineData("SAVE20", 95.00)] 
-    [InlineData("SAVE30", 85.00)] 
+    [InlineData("SAVE20", 95.00)]
+    [InlineData("SAVE30", 85.00)]
     public void CalculateTotal_WithBiggerDiscounts_ShouldApplyCorrectly(string code, decimal expected)
     {
         // Arrange
@@ -104,65 +105,30 @@ public class InvoiceTests
     }
 
     [Fact]
-    public void ToString_RendersInvoice()
+    public void ToString_WithDiscountRendersCorrectInvoice()
     {
         // Arrange
         const decimal taxRate = 0.08m;
         const decimal subTotal = 496;
         var invoice = new Invoice(subTotal, taxRate);
+        // Apply a discount just to vary output
         invoice.TryApplyDiscountCode("SAVE20");
         var total = invoice.CalculateTotal();
-        // Apply a discount just to vary output
 
         // Act
         var result = invoice.ToString();
-        /*
-        |==============================================================================|
-        |                                   INVOICE                                    |
-        |==============================================================================|
-        | SUBTOTAL:                                                             $496.00|
-        | TAXES (8.00%):                                                   +     $39.68|
-        | DISCOUNT:                                                        -     $99.20|
-        | SHIPPING:                                                        +      $5.00|
-        |------------------------------------------------------------------------------|
-        | TOTAL:                                                           =    $441.48|
-        |==============================================================================|
-        */
+        var expected =
+              "|==============================================================================|\r\n"
+            + "|                                    INVOICE                                   |\r\n"
+            + "|==============================================================================|\r\n"
+            + "| SUBTOTAL:                                                             $496.00|\r\n"
+            + "| TAXES (8.00%):                                                   +     $39.68|\r\n"
+            + "| DISCOUNT:                                                        -     $99.20|\r\n"
+            + "| SHIPPING:                                                        +      $5.00|\r\n"
+            + "|------------------------------------------------------------------------------|\r\n"
+            + "| TOTAL:                                                           =    $441.48|\r\n"
+            + "|==============================================================================|\r\n";
 
-        // get all lines in the result
-        var lines = result.Split([Environment.NewLine], StringSplitOptions.RemoveEmptyEntries);
-        
-        // Assert
-        Assert.Equal(10, lines.Length);
-        Assert.All(lines, l => Assert.Equal(80, l.Length));
-        Assert.NotNull(result);
-        Assert.Contains("INVOICE", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains("SUBTOTAL", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains($"{subTotal:C2}", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains("DISCOUNT", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains($"{subTotal*0.2m:C2}", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains("TAXES", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains($"{taxRate:P2}", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains("SHIPPING", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains($"{5m:C2}", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains("TOTAL", result, StringComparison.OrdinalIgnoreCase);
-        Assert.Contains($"{total:C2}", result, StringComparison.OrdinalIgnoreCase);
-
-
-        // assert that the +'s, -'s, and ='s are in the same place and right position
-        Assert.Contains("+", lines[4]);
-        Assert.Contains("-", lines[5]);
-        Assert.Contains("+", lines[6]);
-        Assert.Contains("=", lines[8]);
-
-        var lineHeadingLength = new List<int>()
-        {
-            lines[4].Split('+')[0].Length,
-            lines[5].Split('-')[0].Length,
-            lines[6].Split('+')[0].Length,
-            lines[8].Split('=')[0].Length,
-        }.Distinct();
-
-        Assert.Single(lineHeadingLength); //asserts that they're all the same length.
+        Assert.Equal(expected, result);
     }
 }

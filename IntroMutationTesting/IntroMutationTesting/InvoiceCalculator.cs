@@ -37,12 +37,26 @@ public class Invoice
         _taxRate = taxRate;
     }
 
-    public bool TryApplyDiscountCode(string? discountCode)
+    public bool TryApplyDiscountCode(string? discountCode) => TryApplyDiscountCodeMutant(discountCode);
+
+    private bool TryApplyDiscountCodeMutant(string? discountCode)
     {
         if (discountCode is null || !AllowedCodes.Contains(discountCode) || _discountCodes.Contains(discountCode))
             return false;
 
         if (discountCode.StartsWith("SAVE") && _discountCodes.Any(x => x.StartsWith("SAVE")))
+            _discountCodes.RemoveAll(x => x.StartsWith("SAVE"));
+
+        _discountCodes.Add(discountCode);
+        return true;
+    }
+
+    private bool TryApplyDiscountCodeMutantKiller(string? discountCode)
+    {
+        if (discountCode is null || !AllowedCodes.Contains(discountCode) || _discountCodes.Contains(discountCode))
+            return false;
+
+        if (discountCode.StartsWith("SAVE"))
             _discountCodes.RemoveAll(x => x.StartsWith("SAVE"));
 
         _discountCodes.Add(discountCode);
