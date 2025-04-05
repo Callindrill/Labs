@@ -1,5 +1,6 @@
 {
   "name": "IntroMutationTestingLab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/dotnet:2": {
       "version": "7.0" // or "6.0", "5.0", etc.
