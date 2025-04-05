@@ -6,10 +6,7 @@
       "version": "7.0" // or "6.0", "5.0", etc.
     }
   },
-  "postCreateCommand": [
-    "dotnet tool restore",
-    "dotnet restore IntroMutationTesting.sln"
-  ],
+  "postCreateCommand": "./.devcontainer/setup.sh",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
